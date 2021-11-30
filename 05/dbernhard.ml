@@ -7,6 +7,14 @@ let incorrect_types = [
     hw5_prefix ^ "err_subtype.oat"
   ; hw5_prefix ^ "err_subtype2.oat"
   ; hw5_prefix ^ "err_subtype3.oat"
+  ; hw5_prefix ^ "err_builtin.oat"
+  ; hw5_prefix ^ "err_redefined.oat"
+  ; hw5_prefix ^ "err_redefined2.oat"
+  ; hw5_prefix ^ "err_redefined3.oat"
+  ; hw5_prefix ^ "err_redefined4.oat"
+  ; hw5_prefix ^ "err_redefined5.oat"
+  ; hw5_prefix ^ "err_redefined6.oat"
+  ; hw5_prefix ^ "err_redefined7.oat"
 ]
 
 let simple_tests = [
@@ -43,6 +51,11 @@ let simple_tests = [
   ; (hw5_prefix ^ "equality.oat", "", "are equal0")
   ; (hw5_prefix ^ "non_equality.oat", "", "not equal0")
   ; (hw5_prefix ^ "count_primes_less_100.oat", "", "25")
+
+  ; (hw5_prefix ^ "ref_equality.oat", "", "42")
+  ; (hw5_prefix ^ "ref_equality2.oat", "", "15")
+  ; (hw5_prefix ^ "ref_equality3.oat", "", "42")
+  ; (hw5_prefix ^ "runtime_ex_oob.oat", "", "Out of bounds index 4 for array length 31")
 ]
 
 let dbernhard_tests = (
